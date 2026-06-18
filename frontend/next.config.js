@@ -1,20 +1,7 @@
-/** @type {import('next').NextConfig} */
+/** @type {import("next").NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['localhost', 'njoki-homestays.com'],
-  },
-  headers: async () => {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-        ],
-      },
-    ]
+    domains: ["localhost", "njoki-homestays.com"],
   },
 }
 

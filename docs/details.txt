@@ -1,0 +1,120 @@
+supabase URI=postgresql://postgres:[YOUR-PASSWORD]@db.ghaelbgjlkpegrmcwobh.supabase.co:5432/postgres
+
+password: @Waithaka1720
+
+
+
+SETUP COMPLETE ✓
+╚════════════════════════════════════════════════════════╝
+
+
+🎉 Your Njoki Homestays development environment is ready!
+
+PROJECT STRUCTURE CREATED:
+✓ backend/          - Hono API with all routes
+✓ frontend/         - Next.js app with components
+✓ database/         - Schema and seeds
+✓ .env files        - Configuration templates
+
+WHAT'S INCLUDED:
+
+Backend (Ready to run):
+✓ Complete API with 3 route handlers
+✓ Database schema (units, bookings, reviews)
+✓ Email service (SendGrid integration)
+✓ Input validation (Zod schemas)
+✓ Middleware (CORS, logging, error handling)
+✓ Health check endpoints
+
+Frontend (Ready to run):
+✓ Homepage with search functionality
+✓ Unit card component
+✓ Layout with navigation
+✓ API integration
+✓ Tailwind CSS styling
+
+NEXT STEPS:
+
+1. Start Backend Server:
+   cd backend
+   bun run dev
+
+   → API will run on http://localhost:3001
+   → Try: http://localhost:3001/health
+
+2. Start Frontend Server (new terminal):
+   cd frontend
+   bun run dev
+
+   → Website will run on http://localhost:3000
+   → Open in browser
+
+3. Test the API:
+
+   List units:
+   curl http://localhost:3001/api/units
+
+   Create booking:
+   curl -X POST http://localhost:3001/api/bookings \
+     -H "Content-Type: application/json" \
+     -d '{
+       "unit_id": 1,
+       "guest_name": "John Kamau",
+       "guest_email": "john@example.com",
+       "check_in_date": "2024-07-15",
+       "check_out_date": "2024-07-18",
+       "number_of_guests": 2
+     }'
+
+4. Configure Database (if using PostgreSQL):
+
+   Set DATABASE_URL in backend/.env:
+   DATABASE_URL="postgresql://user:password@localhost:5432/njoki_homestays_dev"
+
+   Then run:
+   cd backend
+   bun run db:push
+
+QUICK COMMANDS:
+
+Backend:
+  bun run dev        # Start dev server
+  bun run build      # Production build
+  bun run db:studio  # Open database GUI
+  npm run lint       # Check code
+  npm run format     # Format code
+
+Frontend:
+  bun run dev        # Start dev server
+  bun run build      # Production build
+  npm run lint       # Check code
+  npm run format     # Format code
+
+FILES CREATED:
+- 10+ backend source files
+- 5+ frontend source files
+- Configuration files
+- Documentation
+
+STATUS:
+✓ Project structure created
+✓ All dependencies installed
+✓ Environment files created
+✓ Sample data prepared
+✓ Ready for development
+
+You can now:
+1. Run the backend and test APIs
+2. Run the frontend and browse the app
+3. Start implementing features
+4. Deploy to production
+
+For detailed API documentation, see docs/API.md
+For tech stack info, see TECH_STACK.md
+
+Questions? Check README.md or contact: support@njoki-homestays.com
+
+Happy coding! 🚀
+
+./setup.sh: line 1960: EOF: command not found
+
