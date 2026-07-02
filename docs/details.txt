@@ -1,6 +1,6 @@
-supabase URI=postgresql://postgres:[YOUR-PASSWORD]@db.ghaelbgjlkpegrmcwobh.supabase.co:5432/postgres
-
-password: @Waithaka1720
+supabase URI=postgresql://postgres:waithaka1720@db.ghaelbgjlkpegrmcwobh.supabase.co:5432/postgres
+postgresql://postgres:[YOUR-PASSWORD]@db.ghaelbgjlkpegrmcwobh.supabase.co:5432/postgres
+password: waithaka1720
 
 
 
