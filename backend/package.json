@@ -4,7 +4,7 @@
   "description": "Njoki Homestays Booking API",
   "type": "module",
   "scripts": {
-    "dev": "hono dev src/index.ts --port 3001",
+    "dev": "bun --hot src/index.ts",
     "build": "bun build src/index.ts --outdir dist --target bun",
     "start": "bun dist/index.js",
     "db:push": "drizzle-kit push:pg",
@@ -23,13 +23,14 @@
     "@sendgrid/mail": "^8.0.0"
   },
   "devDependencies": {
+    "@hono/cli": "^0.1.10",
     "@types/node": "^20.10.0",
     "@types/pg": "^8.11.0",
-    "typescript": "^5.3.0",
-    "drizzle-kit": "^0.20.0",
-    "eslint": "^8.55.0",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
     "@typescript-eslint/parser": "^6.13.0",
-    "prettier": "^3.1.0"
+    "drizzle-kit": "^0.20.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.0"
   }
 }

@@ -63,4 +63,8 @@ async function start() {
     }
 }
 
-export default start()
+const server = await start()
+
+if (server) {
+    Bun.serve(server)
+}
