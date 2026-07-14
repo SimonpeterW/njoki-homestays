@@ -1,8 +1,9 @@
 supabase URI=postgresql://postgres:waithaka1720@db.ghaelbgjlkpegrmcwobh.supabase.co:5432/postgres
 postgresql://postgres:[YOUR-PASSWORD]@db.ghaelbgjlkpegrmcwobh.supabase.co:5432/postgres
 password: waithaka1720
+postgresql://postgres.ghaelbgjlkpegrmcwobh:waithaka1720@aws-0-eu-west-1.pooler.supabase.com:5432/postgres
 
-
+set DATABASE_URL=postgresql://postgres.ghaelbgjlkpegrmcwobh:waithaka1720@aws-0-eu-west-1.pooler.supabase.com:5432/postgres?sslmode=require
 
 SETUP COMPLETE ✓
 ╚════════════════════════════════════════════════════════╝

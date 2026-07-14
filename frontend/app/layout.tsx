@@ -2,39 +2,31 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Njoki Homestays - Book Your Stay',
-  description: 'Discover beautiful homestays in Kenya',
+  title: 'NJOKI Homestays - Premium Luxury Accommodation in Kenya',
+  description: 'Discover luxury vacation rentals in Nyahururu, Nanyuki, and Rumuruti. Book premium accommodations with Njoki Homestays.',
+  keywords: 'luxury vacation rental, Kenya, accommodation, booking, premium stays',
+  openGraph: {
+    title: 'NJOKI Homestays - Premium Luxury Stays',
+    description: 'Discover carefully selected premium accommodations across Kenya',
+    images: ['/og-image.jpg'],
+  },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body>
-        <header className="bg-white shadow-sm sticky top-0 z-50">
-          <nav className="container-max py-4 flex justify-between items-center">
-            <a href="/" className="text-2xl font-bold text-amber-700">
-              🏡 Njoki Homestays
-            </a>
-            <div className="space-x-6">
-              <a href="/" className="text-gray-600 hover:text-amber-700">
-                Browse
-              </a>
-              <a href="/bookings" className="text-gray-600 hover:text-amber-700">
-                My Bookings
-              </a>
-            </div>
-          </nav>
-        </header>
-
-        <main className="container-max py-8">
-          {children}
-        </main>
-
-        <footer className="bg-gray-900 text-white mt-16">
-          <div className="container-max py-8">
-            <p>&copy; 2024 Njoki Homestays. All rights reserved.</p>
-          </div>
-        </footer>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0F172A" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body suppressHydrationWarning={true}>
+        {children}
       </body>
     </html>
   )

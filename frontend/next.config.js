@@ -1,8 +1,13 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["localhost", "njoki-homestays.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "<your-project-id>.supabase.co",
+      },
+    ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
